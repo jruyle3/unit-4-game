@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+
+	<!--Added link to Reset Style-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Added link to CSS Style-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
+</head>
+<body>
+	
+<div class="jumbotron">
+    <h1 class="text-center"><img class="owl" src="assets/images/ovo.jpg">Crystal Collector Game<img class="owl" src="assets/images/ovo.jpg"></h1>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+	            	<h2 class="panel-title" id="panel-title">How to Play!</h2>
+	          	</div>
+	          	<div class="panel-body">
+					<p>
+						You will be given a random number at the start of the game.
+					</p>
+					<p> 
+						There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.
+					</p>
+					<p>
+						You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+					</p>
+					<p>
+						The value of each crystal is hidden from you until you click on it.
+					</p>
+					<p>
+						Each time when the game starts, the game will change the values of each crystal.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-6">
+        </div>
+    </div> 
+
+
+
+    <div class="row text-center">
+            <div class="col-lg-4 total">
+                <h3>Random Number: </h3>
+                <h3 id="magicNumber"></h3>
+                <h3>TOTAL SCORE:</h3>
+                <h3 id="total-score"></h3>
+            </div>
+            <div class="col-lg-4 button">
+                <h3 id="winOrLose"></h3>
+                <button type="button" class="btn btn-light btn-lg">PLAY AGAIN</button>
+            </div>
+            <div class="col-lg-4 scores">
+                <p class="score">WINS: <span id="wins"></span></p> 
+                <p class="score">LOSSES: <span id="losses"></span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <div class="row">
+            <div class="col-sm-3">
+                <img class="crystal-images" id="amethyst" src="assets/images/amethyst.png">
+            </div>
+            <div class="col-sm-3">
+                <img class="crystal-images" id="emerald" src="assets/images/emerald.png">
+            </div>
+            <div class="col-sm-3">
+                <img class="crystal-images" id="ruby" src="assets/images/ruby.png">
+            </div>
+            <div class="col-sm-3">
+                <img class="crystal-images" id="sapphire" src="assets/images/sapphire.png">
+            </div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+	
+
+
+	<!-- Added link to Javascript-->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
